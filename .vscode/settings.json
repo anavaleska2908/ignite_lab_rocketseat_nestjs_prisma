@@ -1,4 +1,12 @@
 {
   "editor.tabSize": 2,
-  "editor.tabCompletion": "on"
+  "editor.tabCompletion": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true
 }
