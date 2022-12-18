@@ -20,11 +20,11 @@ describe('Umread notification', () => {
       notificationId: notification.id,
     })
 
-    expect(notificationsRepository.notifications[0].readAt).toBeTruthy();
-    expect(notificationsRepository.notifications[0].readAt).toEqual(expect.any(Date));
+    // expect(notificationsRepository.notifications[0].readAt).toBeTruthy();
+    expect(notificationsRepository.notifications[0].readAt).toBeNull();
   })
 
-  it('Should not b able to unread a non existing notification', async () => {
+  it('Should not be able to unread a non existing notification', async () => {
     const notificationsRepository = new InMemoryNotificationsRepository();
     const unreadNotification = new UnreadNotification(notificationsRepository);
 

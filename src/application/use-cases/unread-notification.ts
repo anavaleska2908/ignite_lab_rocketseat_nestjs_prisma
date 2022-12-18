@@ -20,7 +20,7 @@ export class UnreadNotification {
       throw new NotificationNotFoundError();
     }
 
-    notification.read();
+    notification.unread();
 
     await this.notificationsRepository.save(notification);
   }
