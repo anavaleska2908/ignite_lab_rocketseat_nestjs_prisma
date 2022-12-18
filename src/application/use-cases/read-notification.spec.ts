@@ -1,6 +1,5 @@
 import { makeNotification } from '@test/factories/notification-factory';
 import { InMemoryNotificationsRepository } from "@test/repositories/in-memory-notifications-repository";
-import { CancelNotification } from "./cancel-notification";
 import { NotificationNotFoundError } from "./errors/notification-not-found-error";
 import { ReadNotification } from './read-notification';
 

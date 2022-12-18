@@ -53,14 +53,14 @@ export class NotificationsController {
     await this.readNotification.execute({
       notificationId: id,
     });
-   }
+  }
 
   @Patch(':id/unread')
   async unread(@Param('id') id: string) {
     await this.unreadNotification.execute({
       notificationId: id,
     });
-   }
+  }
 
   @Post()
   async create(@Body() body: CreateNotificationBody) {

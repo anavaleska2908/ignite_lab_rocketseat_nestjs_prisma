@@ -17,7 +17,6 @@ describe('Count recipients notifications', () => {
       recipientId: 'recipient-1',
     })
 
-    // expect(notificationsRepository.notifications[0].canceledAt).toBeTruthy();
     expect(count).toEqual(2);
   })
 })

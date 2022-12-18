@@ -1,7 +1,6 @@
-import { Notification } from "@application/entities/notification";
 import { Injectable } from "@nestjs/common";
+import { Notification } from "@application/entities/notification";
 import { NotificationsRepository } from "../repositories/notifications-repository";
-import { NotificationNotFoundError } from "./errors/notification-not-found-error";
 
 interface GetRecipientNotificationsRequest {
   recipientId: string;

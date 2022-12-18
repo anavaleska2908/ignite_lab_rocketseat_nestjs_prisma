@@ -7,7 +7,7 @@ export function makeNotification(override: Override = {}) {
   return new Notification({
       content: new Content('This is a notification'),
       category: 'social',
-    recipientId: 'recipient-1',
+      recipientId: 'recipient-1',
       ...override,
     })
 }

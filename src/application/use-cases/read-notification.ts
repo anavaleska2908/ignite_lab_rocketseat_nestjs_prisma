@@ -11,6 +11,7 @@ type ReadNotificationResponse = void;
 @Injectable()
 export class ReadNotification {
   constructor(private notificationsRepository: NotificationsRepository) { }
+
   async execute(request: ReadNotificationRequest): Promise<ReadNotificationResponse> {
     const { notificationId } = request;
 
